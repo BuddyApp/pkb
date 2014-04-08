@@ -6,6 +6,7 @@ describe PKB::ClinicianClient do
     describe "with bearer token" do
       it "should be able to connect" do
         @client = PKB::ClinicianClient.connect(:test => true)
+        @client.patients
       end
     end
   end

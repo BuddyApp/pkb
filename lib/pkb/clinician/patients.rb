@@ -2,7 +2,10 @@ module PKB
   module Clinician
     module Patients
       def patients
-        self.class.get('/rest/v1/users/self/patients', :headers => headers)
+        response = self.class.get('/json/v1/users/self/patients', :headers => headers)
+        response["results"].map do |result|
+          Patient.new(result)
+        end
       end
     end
   end
