@@ -7,7 +7,7 @@ require 'active_support/core_ext/string'
 require "pkb/version"
 require "pkb/clinician_client"
 require "pkb/patient_client"
-require "pkb/clinician/patient"
+require "pkb/models/patient"
 
 module PKB
   class Config

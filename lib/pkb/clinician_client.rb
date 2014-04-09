@@ -1,8 +1,10 @@
 require 'pkb/clinician/patients'
+require 'pkb/clinician/colleagues'
 
 module PKB
   class ClinicianClient
     include PKB::Clinician::Patients
+    include PKB::Clinician::Colleagues
     include HTTParty
 
     attr_reader :headers, :host
