@@ -1,6 +1,6 @@
 module PKB
   module Models
-    class Patient
+    class Patient < PKBApi
       attr_accessor :id,
       :state,
       :country,
@@ -25,12 +25,6 @@ module PKB
       :height_inches_total,
       :height_cm,
       :patient
-
-      def initialize(opts)
-        opts.each do |k, v|
-          self.send("#{k.underscore}=", v)
-        end
-      end
 
       def date_of_birth
       end

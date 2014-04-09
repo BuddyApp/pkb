@@ -13,6 +13,21 @@ describe PKB::PatientClient do
           @client.myself
         end
 
+        it "should be able to list diagnosis" do
+          @client.diagnosis
+        end
+
+        it "should list measurements" do
+          @client.measurements
+        end
+
+
+        describe "with a patient" do
+          before {
+            @patient = @client.myself
+          }
+        end
+
       end
     end
   end

@@ -1,9 +1,13 @@
+require 'pkb/shared/shared'
 require 'pkb/patient/patient'
+require 'pkb/patient/measurement'
 
 module PKB
   class PatientClient
     include HTTParty
+    include PKB::Shared
     include PKB::Patient::Patient
+    include PKB::Patient::Measurement
 
     attr_reader :headers, :host
 
