@@ -8,6 +8,8 @@ require "pkb/version"
 require "pkb/clinician_client"
 require "pkb/patient_client"
 
+require 'pkb/proxies/measurement'
+
 require 'pkb/models/pkb_api'
 require "pkb/models/patient"
 require "pkb/models/diagnosis"

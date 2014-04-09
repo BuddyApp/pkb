@@ -17,8 +17,8 @@ describe PKB::PatientClient do
           @client.diagnosis
         end
 
-        it "should list measurements" do
-          @client.measurements
+        it "should list all measurements" do
+          @client.measurements.all
         end
 
 
