@@ -4,7 +4,7 @@ module PKB
       def colleagues
         response = self.class.get('/json/v1/users/self/colleagues', :headers => headers)
         response["results"].map do |result|
-          Colleague.new(result)
+          PKB::Models::Clinician.new(result)
         end
       end
     end

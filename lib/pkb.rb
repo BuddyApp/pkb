@@ -12,6 +12,7 @@ require 'pkb/proxies/measurement'
 
 require 'pkb/models/pkb_api'
 require "pkb/models/patient"
+require "pkb/models/clinician"
 require "pkb/models/diagnosis"
 require "pkb/models/measurement"
 

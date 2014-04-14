@@ -17,10 +17,6 @@ describe PKB::ClinicianClient do
           @client.colleagues
         end
 
-        it "should be able to list diagnosis" do
-          @client.diagnosis
-        end
-
       end
     end
   end
